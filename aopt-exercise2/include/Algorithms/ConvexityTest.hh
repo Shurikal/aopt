@@ -37,10 +37,35 @@ namespace AOPT {
             const int max_sampling_points(1000000);
 
             //------------------------------------------------------//
-            //Todo: Add your code here
+            double deltaTheta = 1.0/(n_evals+1);
+            double theta,evalX,evalY;
+
+            Vec x, y;
+
+            for (int i = 0; i < max_sampling_points; ++i) {
+
+                //generate 2 random points
+                x = rng.get_random_nd_vector(n);
+                y = rng.get_random_nd_vector(n);
+
+                evalX = _function->eval_f(x);
+                evalY = _function->eval_f(y);
+
+                for (int j = 0; j < n_evals; ++j) {
+                    // ignore theta = 0 and theta = 1 -> always correct
+                    theta = deltaTheta * (1.0+j);
+
+                    // f (θx + (1 −θ)y) > θf (x) + (1 −θ)f (y)
+                    // if this is true, function is not convex
+                    // no need to calculate more points
+                    if (_function->eval_f(theta * x + (1 - theta) * y) > theta * evalX + (1 - theta) * evalY){
+                        return false;
+                    }
+                }
+            }
            
             //------------------------------------------------------//
-            return false;
+            return true;
         }
 
 
