@@ -12,4 +12,4 @@ Geometric mean
 
 Programming Exercise
 - The programming was not so difficult.
-  To decrease the computation time, you could use multiple threads to speed up the program.
+  An improvement would be to use multiple threads to speed up the program.
