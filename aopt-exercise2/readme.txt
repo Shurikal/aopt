@@ -8,7 +8,7 @@ Log-sum-exp
   Raphael looked in the library for the book but all it wasn't available.
 
 Geometric mean
- - No idea how to start
+ - was difficult
 
 Programming Exercise
 - The programming was not so difficult.
