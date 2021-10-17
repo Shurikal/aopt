@@ -48,8 +48,10 @@ namespace AOPT {
         inline virtual void eval_gradient(const Vec &_x, const Vec &_coeffs, Vec &_g) override {
             //------------------------------------------------------//
             //Todo: implement the gradient and store in _g
-            
-            
+            _g[0] = -_coeffs[0]*(_x[2]-_x[0]);
+            _g[1] = -_coeffs[0]*(_x[3]-_x[1]);
+            _g[2] = _coeffs[0]*(_x[2]-_x[0]);
+            _g[3] = _coeffs[0]*(_x[3]-_x[1]);
             //------------------------------------------------------//
         }
 
@@ -63,7 +65,19 @@ namespace AOPT {
         inline virtual void eval_hessian(const Vec &_x, const Vec &_coeffs, Mat &_H) override {
             //------------------------------------------------------//
             //Todo: implement the hessian matrix and store in _H
-            
+            _H = Mat::Zero(4,4);
+
+            _H(0,0)=_coeffs[0];
+            _H(1,1)=_coeffs[0];
+            _H(2,2)=_coeffs[0];
+            _H(3,3)=_coeffs[0];
+
+            _H(0,2)=-_coeffs[0];
+            _H(2,0)=-_coeffs[0];
+
+            _H(1,3)=-_coeffs[0];
+            _H(3,1)=-_coeffs[0];
+
             
             //------------------------------------------------------//
         }
