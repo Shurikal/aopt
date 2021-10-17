@@ -50,10 +50,18 @@ namespace AOPT {
         inline virtual void eval_gradient(const Vec &_x, const Vec &_coeffs, Vec &_g) override {
             //------------------------------------------------------//
             //Todo: implement the gradient and store in _g
-            _g[0] = pow(_coeffs[0],2.0)*pow(_x[0]-_x[2],2.0);
-            _g[1] = pow(_coeffs[0],2.0)*pow(_x[1]-_x[3],2.0);
-            _g[2] = pow(_coeffs[0],2.0)*pow(_x[0]-_x[2],2.0);
-            _g[3] = pow(_coeffs[0],2.0)*pow(_x[1]-_x[3],2.0);
+
+            double cache = pow(_x[0]-_x[2],2.0)
+                           + pow(_x[1]-_x[3],2.0)
+                           - pow(_coeffs[1],2.0);
+            // Gradient in x0 = 2k*(x0-x2)*((x0-x2)^2+(x1-x3)^2-l^2)
+            _g[0] = 2*_coeffs[0]*(_x[0]-_x[2])*cache;
+            // Gradient in x1 = 2k*(x1-x3)*((x0-x2)^2+(x1-x3)^2-l^2)
+            _g[1] = 2*_coeffs[0]*(_x[1]-_x[3])*cache;
+            // Gradient in x2 = -2k*(x0-x2)*((x0-x2)^2+(x1-x3)^2-l^2)
+            _g[2] = -_g[0];
+            // Gradient in x3 = 2k*(x1-x3)*((x0-x2)^2+(x1-x3)^2-l^2)
+            _g[3] = -_g[1];
             
             //------------------------------------------------------//
         }
@@ -70,16 +78,16 @@ namespace AOPT {
 
             _H = Mat::Zero(4,4);
 
-            _H(0,0)=2*pow(_coeffs[0],2.0) * (_x[0]-_x[2]);
-            _H(1,1)=2*pow(_coeffs[0],2.0) * (_x[1]-_x[3]);
-            _H(2,2)=-2*pow(_coeffs[0],2.0) * (_x[0]-_x[2]);
-            _H(3,3)=-2*pow(_coeffs[0],2.0) * (_x[1]-_x[3]);
+            _H(0,0)=2*_coeffs[0]*(3*pow(_x[0]-_x[2],2.0)+pow(_x[1]-_x[3],2.0)-_coeffs[1]);
+            _H(1,1)=0;
+            _H(2,2)=0;
+            _H(3,3)=0;
 
-            _H(0,2)=2*pow(_coeffs[0],2.0) * (_x[0]-_x[2]);
-            _H(2,0)=2*pow(_coeffs[0],2.0) * (_x[0]-_x[2]);
+            _H(0,2)=0;
+            _H(2,0)=0;
 
-            _H(1,3)=2*pow(_coeffs[0],2.0) * (_x[1]-_x[3]);
-            _H(3,1)=2*pow(_coeffs[0],2.0) * (_x[1]-_x[3]);
+            _H(1,3)=0;
+            _H(3,1)=0;
             
             //------------------------------------------------------//
         }
