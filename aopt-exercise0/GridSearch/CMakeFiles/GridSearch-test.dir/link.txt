@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/GridSearch-test.dir/unit_tests.cc.o -o ../Build/bin/GridSearch-test  ../lib/libgtestd.a ../lib/libgtest_maind.a ../lib/libgtestd.a 

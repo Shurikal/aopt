@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="AOPT_EXERCISES"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\_deps\;CMake Files\_deps\googletest-src\;CMake Files\_deps\googletest-src\googlemock\;CMake Files\_deps\googletest-src\googlemock\cmake\;CMake Files\_deps\googletest-src\googletest\;CMake Files\_deps\googletest-src\googletest\cmake\;CMake Files\GridSearch\;CMake Files\CsvExporter\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock">
+				<Option output="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googlemock/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googlemock"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock/fast">
+				<Option output="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googlemock/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googlemock"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main">
+				<Option output="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googlemock/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googlemock"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main/fast">
+				<Option output="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googlemock/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googlemock"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GridSearch-test">
+				<Option output="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Build/bin/GridSearch-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/external/eigen"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/Makefile&quot;  VERBOSE=1 GridSearch-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GridSearch-test/fast">
+				<Option output="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Build/bin/GridSearch-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/external/eigen"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/Makefile&quot;  VERBOSE=1 GridSearch-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GridSearch">
+				<Option output="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Build/bin/GridSearch" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/external/eigen"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/Makefile&quot;  VERBOSE=1 GridSearch"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GridSearch/fast">
+				<Option output="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Build/bin/GridSearch" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/external/eigen"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/Makefile&quot;  VERBOSE=1 GridSearch/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CsvExporter">
+				<Option output="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Build/bin/CsvExporter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/external/eigen"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/CsvExporter/Makefile&quot;  VERBOSE=1 CsvExporter"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/CsvExporter/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/CsvExporter/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/CsvExporter/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CsvExporter/fast">
+				<Option output="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Build/bin/CsvExporter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/include"/>
+					<Add directory="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/external/eigen"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/CsvExporter/Makefile&quot;  VERBOSE=1 CsvExporter/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/CsvExporter/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/CsvExporter/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/CsvExporter/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/CsvExporter/main.cc">
+			<Option target="CsvExporter"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/main.cc">
+			<Option target="GridSearch"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/unit_tests.cc">
+			<Option target="GridSearch-test"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googlemock/src/gmock-all.cc">
+			<Option target="gmock"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googlemock/src/gmock_main.cc">
+			<Option target="gmock_main"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googlemock\"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googletest\"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/_deps/googletest-src/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\GridSearch\"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/GridSearch/unit_tests.cc">
+			<Option virtualFolder="CMake Files\GridSearch\"/>
+		</Unit>
+		<Unit filename="/Users/chris/OneDrive/Bern/Semester_01/Applied_Optimization/Exercises/aopt-exercise0/CsvExporter/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\CsvExporter\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

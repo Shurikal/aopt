@@ -1,0 +1,6 @@
+FunctionsTest.QuadraticFucntion2d 21 0.0151991
+FunctionsTest.QuadraticFucntionNd 20 0.000137277
+FunctionsTest.NonConvexFunction2d 21 0.000138665
+GridSearchTests.Grid2dFunction2dGridSearch 21 0.000154157
+GridSearchTests.GridNdFunctionNdGridSearch 6 0.0566748
+---
