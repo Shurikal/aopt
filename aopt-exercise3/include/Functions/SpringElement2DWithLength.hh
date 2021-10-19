@@ -76,7 +76,7 @@ namespace AOPT {
             //------------------------------------------------------//
             //Todo: implement the hessian matrix and store in _H
 
-            _H = Mat::Zero(4,4);
+            _H.setZero();
 			double cache = pow(_x[0]-_x[2],2.0)
                            + pow(_x[1]-_x[3],2.0)
                            - pow(_coeffs[1],2.0);

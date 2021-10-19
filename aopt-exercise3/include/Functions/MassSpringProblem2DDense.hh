@@ -108,8 +108,22 @@ namespace AOPT {
             //------------------------------------------------------//
             //TODO: assemble local gradient vector to the global one
             //use ge_ to store the result of the local gradient
-            
-            
+
+            for (int i = 0; i < springs_.size(); ++i) {
+                int node0 = springs_[i].first;
+                int node1 = springs_[i].second;
+
+                xe_ << _x[2*node0] , _x[2*node0+1],_x[2*node1] , _x[2*node1+1];
+                coeff[0] = ks_[i];
+                coeff[1] = ls_[i];
+
+                _g[2*node0]   = 0;
+                _g[2*node0+1] = 0;
+                _g[2*node1]   = 0;
+                _g[2*node1+1] = 0;
+                //std::cout <<"First: " << _x[2*i] <<" Second: " << _x[2*i+1] << "\n";
+            }
+
             //------------------------------------------------------//
         }
 

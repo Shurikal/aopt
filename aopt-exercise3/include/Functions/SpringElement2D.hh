@@ -65,7 +65,7 @@ namespace AOPT {
         inline virtual void eval_hessian(const Vec &_x, const Vec &_coeffs, Mat &_H) override {
             //------------------------------------------------------//
             //Todo: implement the hessian matrix and store in _H
-            _H = Mat::Zero(4,4);
+            _H.setZero();
 
             _H(0,0)=_coeffs[0];
             _H(1,1)=_coeffs[0];
