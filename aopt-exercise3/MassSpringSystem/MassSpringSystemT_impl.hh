@@ -63,12 +63,8 @@ namespace AOPT {
 
 
     
-    int pointToIndex(int x, int y, int maxX){
-        if(y>0){
-            return y*maxX+x+1;
-        } else{
-            return x;
-        }
+    int pointToIndex(int x, int y, int max){
+        return x*(max+1)+y;
 
     }
 
@@ -83,20 +79,20 @@ namespace AOPT {
                 sg_.add_vertex(p);
 
                 //horizontal
-                if(x+1 <= n_grid_x_){
-                    sg_.add_edge(pointToIndex(x,y,n_grid_x_),pointToIndex(x+1,y,n_grid_x_),1,sqrt(2.0));
+                if(x < n_grid_x_){
+                    sg_.add_edge(pointToIndex(x,y,n_grid_y_),pointToIndex(x+1,y,n_grid_y_),1,sqrt(2.0));
                 }
                 //diagonal downwarts
                 if(x+1 <= n_grid_x_ && y-1 >=0){
-                    sg_.add_edge(pointToIndex(x,y,n_grid_x_),pointToIndex(x+1,y-1,n_grid_x_),1,sqrt(2.0));
+                    sg_.add_edge(pointToIndex(x,y,n_grid_y_),pointToIndex(x+1,y-1,n_grid_y_),1,sqrt(2.0));
                 }
                 //diagonal upwarts
                 if(x+1 <= n_grid_x_ && y+1 <= n_grid_y_){
-                    sg_.add_edge(pointToIndex(x,y,n_grid_x_),pointToIndex(x+1,y+1,n_grid_x_),1,sqrt(2.0));
+                    sg_.add_edge(pointToIndex(x,y,n_grid_y_),pointToIndex(x+1,y+1,n_grid_y_),1,sqrt(2.0));
                 }
                 //upwarts
                 if( y+1 <= n_grid_y_){
-                    sg_.add_edge(pointToIndex(x,y,n_grid_x_),pointToIndex(x,y+1,n_grid_x_),1,sqrt(2.0));
+                    sg_.add_edge(pointToIndex(x,y,n_grid_y_),pointToIndex(x,y+1,n_grid_y_),1,sqrt(2.0));
                 }
             }
         }
