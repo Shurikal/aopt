@@ -60,15 +60,28 @@ namespace AOPT {
         virtual double eval_f(const Vec &_x) override {
             double energy(0);
 
-            //used to store the value of k and l, i.e. coeff[0] = ks_[i], coeff[0] = ls_[i];
+            //used to store the value of k and l, i.e. coeff[0] = ks_[i], coeff[1] = ls_[i];
             Vec coeff(2);
 
             //------------------------------------------------------//
             //TODO: assemble function values of all spring elements
             //use vector xe_ to store the local coordinates of two nodes of every spring
             //then pass it to func_.eval_f(...)
-            
-            
+
+            for (int i = 0; i < springs_.size(); ++i) {
+                int node0 = springs_[i].first;
+                int node1 = springs_[i].second;
+
+                xe_ << _x[2*node0] , _x[2*node0+1],_x[2*node1] , _x[2*node1+1];
+                coeff[0] = ks_[i];
+                coeff[1] = ls_[i];
+
+                energy+=func_.eval_f(xe_,coeff);
+
+                //std::cout <<"First: " << _x[2*i] <<" Second: " << _x[2*i+1] << "\n";
+            }
+
+            //std::cout <<"Energy: " << energy << "\n";
             //------------------------------------------------------//
 
             return energy;
