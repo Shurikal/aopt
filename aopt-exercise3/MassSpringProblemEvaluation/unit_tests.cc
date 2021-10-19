@@ -140,6 +140,7 @@ TEST(MassSpringProblem, MassSpringProblem2DDenseFunctions){
     ASSERT_EQ(g, expected_g);
 
     msp.eval_hessian(x, H);
+    std::cout << "Our solution: \n" << H;
     Mat expected_hess(n_unknowns, n_unknowns);
     expected_hess<<76, -40,  -6,   4,   0,   0, -70,  36,
             -40,  76,   4,  -6,   0,   0,  36, -70,

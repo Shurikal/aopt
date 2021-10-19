@@ -117,11 +117,12 @@ namespace AOPT {
                 coeff[0] = ks_[i];
                 coeff[1] = ls_[i];
 
-                _g[2*node0]   = 0;
-                _g[2*node0+1] = 0;
-                _g[2*node1]   = 0;
-                _g[2*node1+1] = 0;
-                //std::cout <<"First: " << _x[2*i] <<" Second: " << _x[2*i+1] << "\n";
+                func_.eval_gradient(xe_,coeff,ge_);
+
+                _g[2*node0]   += ge_[0];
+                _g[2*node0+1] += ge_[1];
+                _g[2*node1]   += ge_[2];
+                _g[2*node1+1] += ge_[3];
             }
 
             //------------------------------------------------------//
@@ -144,7 +145,41 @@ namespace AOPT {
             //------------------------------------------------------//
             //TODO: assemble local hessian matrix to the global one
             //use he_ to store the local hessian matrix
-            
+
+            for (int i = 0; i < springs_.size(); ++i) {
+                int node0 = springs_[i].first;
+                int node1 = springs_[i].second;
+
+                xe_ << _x[2*node0] , _x[2*node0+1],_x[2*node1] , _x[2*node1+1];
+                coeff[0] = ks_[i];
+                coeff[1] = ls_[i];
+
+                func_.eval_hessian(xe_,coeff,he_);
+
+                _h(2*node0,2*node0)+=he_(0,0);
+                _h(2*node0,2*node0+1)+=he_(0,1);
+                _h(2*node0,2*node1)+=he_(0,2);
+                _h(2*node0,2*node1+1)+=he_(0,3);
+
+                _h(2*node0+1,2*node0)+=he_(1,0);
+                _h(2*node0+1,2*node0+1)+=he_(1,1);
+                _h(2*node0+1,2*node1)+=he_(1,2);
+                _h(2*node0+1,2*node1+1)+=he_(1,3);
+
+                _h(2*node1,2*node0)+=he_(2,0);
+                _h(2*node1,2*node0+1)+=he_(2,1);
+                _h(2*node1,2*node1)+=he_(2,2);
+                _h(2*node1,2*node1+1)+=he_(2,3);
+
+                _h(2*node1+1,2*node0)+=he_(3,0);
+                _h(2*node1+1,2*node0+1)+=he_(3,1);
+                _h(2*node1+1,2*node1)+=he_(3,2);
+                _h(2*node1+1,2*node1+1)+=he_(3,3);
+
+
+            }
+
+            //std::cout << _h;
             //------------------------------------------------------//
         }
 
