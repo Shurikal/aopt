@@ -83,15 +83,15 @@ namespace AOPT {
                     sg_.add_edge(pointToIndex(x,y,n_grid_y_),pointToIndex(x+1,y,n_grid_y_),1,sqrt(2.0));
                 }
                 //diagonal downwarts
-                if(x+1 <= n_grid_x_ && y-1 >=0){
+                if(x < n_grid_x_ && y >0){
                     sg_.add_edge(pointToIndex(x,y,n_grid_y_),pointToIndex(x+1,y-1,n_grid_y_),1,sqrt(2.0));
                 }
                 //diagonal upwarts
-                if(x+1 <= n_grid_x_ && y+1 <= n_grid_y_){
+                if(x < n_grid_x_ && y < n_grid_y_){
                     sg_.add_edge(pointToIndex(x,y,n_grid_y_),pointToIndex(x+1,y+1,n_grid_y_),1,sqrt(2.0));
                 }
                 //upwarts
-                if( y+1 <= n_grid_y_){
+                if( y < n_grid_y_){
                     sg_.add_edge(pointToIndex(x,y,n_grid_y_),pointToIndex(x,y+1,n_grid_y_),1,sqrt(2.0));
                 }
             }
