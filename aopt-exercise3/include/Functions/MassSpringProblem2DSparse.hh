@@ -64,7 +64,18 @@ namespace AOPT {
             //use vector xe_ to store the local coordinates of two nodes of every spring
             //then pass it to func_.eval_f(...)
 
-        
+            for (int i = 0; i < springs_.size(); ++i) {
+                int node0 = springs_[i].first;
+                int node1 = springs_[i].second;
+
+                xe_ << _x[2*node0] , _x[2*node0+1],_x[2*node1] , _x[2*node1+1];
+                coeff[0] = ks_[i];
+                coeff[1] = ls_[i];
+
+                energy+=func_.eval_f(xe_,coeff);
+
+                //std::cout <<"First: " << _x[2*i] <<" Second: " << _x[2*i+1] << "\n";
+            }
 
             //------------------------------------------------------//
 
@@ -92,7 +103,22 @@ namespace AOPT {
             //------------------------------------------------------//
             //TODO: assemble local gradient vector to the global one
             //use ge_ to store the result of the local gradient
-            
+            for (int i = 0; i < springs_.size(); ++i) {
+                int node0 = springs_[i].first;
+                int node1 = springs_[i].second;
+
+                xe_ << _x[2*node0] , _x[2*node0+1],_x[2*node1] , _x[2*node1+1];
+                coeff[0] = ks_[i];
+                coeff[1] = ls_[i];
+
+                func_.eval_gradient(xe_,coeff,ge_);
+
+                _g[2*node0]   += ge_[0];
+                _g[2*node0+1] += ge_[1];
+                _g[2*node1]   += ge_[2];
+                _g[2*node1+1] += ge_[3];
+            }
+
             //------------------------------------------------------//
         }
 
@@ -116,7 +142,30 @@ namespace AOPT {
             //TODO: assemble local hessian matrix to the global one
             //use he_ to store the local hessian matrix
 
-           
+            for (int i = 0; i < springs_.size(); ++i) {
+                int node0 = springs_[i].first;
+                int node1 = springs_[i].second;
+
+                int indexes [4] = {2*node0,2*node0+1,2*node1,2*node1+1};
+
+                xe_ << _x[2*node0] , _x[2*node0+1],_x[2*node1] , _x[2*node1+1];
+                coeff[0] = ks_[i];
+                coeff[1] = ls_[i];
+
+                func_.eval_hessian(xe_,coeff,he_);
+
+                for(int a = 0; a < 4;a++){
+                    for(int b = 0; b < 4;b++){
+                        if(he_(a,b)!=0.0){
+                            triplets.push_back(T(indexes[a],indexes[b],he_(a,b)));
+
+                        }
+                    }
+                }
+
+            }
+
+
             //------------------------------------------------------//
 
 
