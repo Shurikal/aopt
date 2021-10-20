@@ -73,7 +73,8 @@ namespace AOPT {
         //------------------------------------------------------//
         //TODO: set up the spring graph of n_grid_x by n_grid_y ()
 
-        double springLength = sqrt(2.0);
+        double springLength = 1.0;
+        double springLengthDiag = sqrt(2.0);
         double springK = 1.0;
 
         for (int x = 0; x <= n_grid_x_; ++x) {
@@ -87,11 +88,11 @@ namespace AOPT {
                 }
                 //diagonal downwarts
                 if(x < n_grid_x_ && y >0){
-                    sg_.add_edge(pointToIndex(x,y,n_grid_y_),pointToIndex(x+1,y-1,n_grid_y_),springK,springLength);
+                    sg_.add_edge(pointToIndex(x,y,n_grid_y_),pointToIndex(x+1,y-1,n_grid_y_),springK,springLengthDiag);
                 }
                 //diagonal upwarts
                 if(x < n_grid_x_ && y < n_grid_y_){
-                    sg_.add_edge(pointToIndex(x,y,n_grid_y_),pointToIndex(x+1,y+1,n_grid_y_),springK,springLength);
+                    sg_.add_edge(pointToIndex(x,y,n_grid_y_),pointToIndex(x+1,y+1,n_grid_y_),springK,springLengthDiag);
                 }
                 //upwarts
                 if( y < n_grid_y_){
