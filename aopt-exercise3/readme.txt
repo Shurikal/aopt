@@ -1,10 +1,10 @@
 QCQP to SOCP
 
--
+Solution in AO_exercise3.pdf
 
 Linear Programming
 
--
+Solution in AO_exercise3.pdf
 
 Transform general LP to standard form
 
