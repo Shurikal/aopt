@@ -51,7 +51,28 @@ namespace AOPT {
             //6. check gradient (cond. 4.)
             //------------------------------------------------------//
 
-            
+            double epsilon= 1e-8;
+
+            //check inequality
+            if(!_inequality_constraints.empty()){
+                for (int i = 0; i < _inequality_constraints.size(); ++i) {
+                    if(_inequality_constraints[i]->eval_f(_query_point)>epsilon){
+                        return false;
+                    }
+                }
+            }
+
+            //check equality
+            if(!_equality_constraints.empty()){
+                for (int i = 0; i < _equality_constraints.size(); ++i) {
+                    if(abs(_equality_constraints[i]->eval_f(_query_point))>epsilon){
+                        return false;
+                    }
+                }
+            }
+
+            //check lambda
+            return true;
         }
 
     private:
