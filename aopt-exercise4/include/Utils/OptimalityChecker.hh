@@ -75,6 +75,7 @@ namespace AOPT {
             //check equality
             if(!_equality_constraints.empty()){
                 for (int i = 0; i < _equality_constraints.size(); ++i) {
+                    std::cout <<abs(_equality_constraints[i]->eval_f(_query_point))<<"\n";
                     if(abs(_equality_constraints[i]->eval_f(_query_point))>epsilon){
                         return false;
                     }
@@ -91,6 +92,8 @@ namespace AOPT {
                     lagrangian_gradient += _lambda[i] * in_gradient;
                 }
             }
+
+
 
             //check equality
             if(!_equality_constraints.empty()){

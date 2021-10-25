@@ -1,0 +1,1 @@
+The parameters x*, lambda*, nu* that were determined in the KKT Condition exercise were approved by our program.
