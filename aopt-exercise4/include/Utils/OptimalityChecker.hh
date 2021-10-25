@@ -53,10 +53,20 @@ namespace AOPT {
 
             double epsilon= 1e-8;
 
-            //check inequality
+            //check inequality, lambda
             if(!_inequality_constraints.empty()){
                 for (int i = 0; i < _inequality_constraints.size(); ++i) {
-                    if(_inequality_constraints[i]->eval_f(_query_point)>epsilon){
+                    double eval_f = _inequality_constraints[i]->eval_f(_query_point);
+                    //check inequality
+                    if(eval_f>epsilon){
+                        return false;
+                    }
+                    //lambda
+                    if(_lambda[i]<-epsilon){
+                        return false;
+                    }
+                    //complementary slackness
+                    if(abs(_lambda[i]*eval_f) > epsilon){
                         return false;
                     }
                 }
@@ -71,7 +81,32 @@ namespace AOPT {
                 }
             }
 
-            //check lambda
+            Vec lagrangian_gradient;
+            _objective->eval_gradient(_query_point, lagrangian_gradient);
+
+            if(!_inequality_constraints.empty()){
+                for (int i = 0; i < _inequality_constraints.size(); ++i) {
+                    Vec in_gradient;
+                    _inequality_constraints[i]->eval_gradient(_query_point,in_gradient);
+                    lagrangian_gradient += _lambda[i] * in_gradient;
+                }
+            }
+
+            //check equality
+            if(!_equality_constraints.empty()){
+                for (int i = 0; i < _equality_constraints.size(); ++i) {
+                    Vec eq_gradient;
+                    _equality_constraints[i]->eval_gradient(_query_point,eq_gradient);
+                    lagrangian_gradient += _nu[i]*eq_gradient;
+                }
+            }
+
+            for(int i = 0; i < lagrangian_gradient.size();i++){
+                if(abs(lagrangian_gradient[i])>epsilon){
+                    return false;
+                }
+            }
+
             return true;
         }
 
