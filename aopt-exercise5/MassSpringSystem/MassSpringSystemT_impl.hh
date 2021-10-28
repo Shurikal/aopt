@@ -67,6 +67,18 @@ void MassSpringSystemT<MassSpringProblem>::add_constrained_spring_elements(const
     //------------------------------------------------------//
     //Todo: add constrained spring elements to the problem
     //implement both scenarios here.
+
+
+    if(_scenario ==1) {
+
+
+
+    }
+    else if(_scenario == 2) {
+
+
+
+    }
     
     
     //------------------------------------------------------//
