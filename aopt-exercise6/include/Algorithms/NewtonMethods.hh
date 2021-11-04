@@ -49,6 +49,36 @@ namespace AOPT {
   
             //------------------------------------------------------//
             //TODO: implement Newton method
+
+            for (; iter < _max_iters; ++iter) {
+                // calculate gradient
+                _problem->eval_gradient(x,g);
+
+                //calculate hessian
+                _problem->eval_hessian(x,H);
+
+                solver.compute(H);
+
+                delta_x =  -solver.matrixL().transpose().solve(solver.solve(g));
+
+                // Newton decrement
+                double lambda_square_half = -g.transpose().dot(delta_x);
+
+                if(lambda_square_half <= e2){
+                    break;
+                }
+                double t = LineSearch::backtracking_line_search(_problem,x,g,delta_x,1);
+                //std::cout << H << "\n";
+                //std::cout << "... \n";
+                //std::cout << delta_x << "\n";
+                x = x+ t * delta_x;
+
+
+            }
+
+
+
+
            
             //------------------------------------------------------//
 
