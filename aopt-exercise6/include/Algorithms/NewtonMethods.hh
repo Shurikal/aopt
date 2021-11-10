@@ -59,12 +59,14 @@ namespace AOPT {
 
                 solver.compute(H);
 
-                delta_x =  -solver.matrixL().transpose().solve(solver.solve(g));
+                //delta_x =  -solver.matrixL().transpose().solve(solver.solve(g));
+                delta_x = -1.0* solver.solve(Mat::Identity(H.rows(),H.cols()))*g;
 
                 // Newton decrement
-                double lambda_square_half = -g.transpose().dot(delta_x);
+                double lambda = -g.transpose().dot(delta_x);
 
-                if(lambda_square_half <= e2){
+                if(lambda*0.5 <= e2){
+                    std::cout << iter;
                     break;
                 }
                 double t = LineSearch::backtracking_line_search(_problem,x,g,delta_x,1);

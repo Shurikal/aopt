@@ -29,8 +29,8 @@ namespace AOPT {
                                                const Vec &_g,
                                                const Vec &_dx,
                                                const double _t0,
-                                               const double _alpha = 0.2,
-                                               const double _tau = 0.6) {
+                                               const double _alpha = 0.5,
+                                               const double _tau = 0.75) {
 
             double t(0);
 

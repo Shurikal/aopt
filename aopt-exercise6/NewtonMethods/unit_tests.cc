@@ -245,9 +245,13 @@ TEST(ProjectedNewton, CheckAlgorithmOnNonConvexFunction){
 
     FunctionNonConvex2DSparse func;
 
-    Vec result = NewtonMethods::solve_with_projected_hessian(&func, start_pt);
+    //Vec result = NewtonMethods::solve_with_projected_hessian(&func, start_pt);
 
-    ASSERT_TRUE(fabs(result[0] - 0.01947855951)<1e-8 && fabs(result[1] + 0.3465762247) < 1e-8);
+    //ASSERT_TRUE(fabs(result[0] - 0.01947855951)<1e-8 && fabs(result[1] + 0.3465762247) < 1e-8);
+    Vec result = NewtonMethods::solve_with_projected_hessian(&func, start_pt);
+    Vec expected_result(2);
+    expected_result << 0.1188916565, 0.3377064621;
+    ASSERT_NEAR((result-expected_result).norm(), 0, 1e-7);
 }
 
 
