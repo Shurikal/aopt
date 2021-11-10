@@ -43,8 +43,33 @@ namespace AOPT {
 
             //------------------------------------------------------//
             //TODO: implement the gradient descent
-            
 
+            double fp = std::numeric_limits<double>::max();
+
+            do {
+                ++iter;
+                // get (negative) gradient as descent direction
+                _problem->eval_gradient(x, g);
+
+                // check stopping criterion
+                double g2 = g.transpose() * g;
+
+                double f = _problem->eval_f(x);
+                // print status
+                std::cout << "iter: " << iter <<
+                          "   obj = " << f <<
+                          "   ||g||^2 = " << g2<< std::endl;
+
+                if (f >= fp || g2 <= e2) break;
+
+                // step size
+                double t = LineSearch::backtracking_line_search(_problem, x, g, -g, 1.);
+
+                // update
+                x += t * (-g);
+                fp = f;
+
+            } while (iter < _max_iters);
             //------------------------------------------------------//
 
             return x;

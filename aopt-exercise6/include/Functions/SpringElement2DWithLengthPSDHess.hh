@@ -29,7 +29,11 @@ public:
         //      2. to convert a vector d to a (dense) diagonal matrix D, use
         //          D = d.asDiagonal()
 
-        
+        Eigen::SelfAdjointEigenSolver<Mat> solver(_H);
+        Mat evecs = solver.eigenvectors();
+        Vec evals = solver.eigenvalues();
+
+
 
         //------------------------------------------------------//
     }

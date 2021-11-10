@@ -49,7 +49,8 @@ namespace AOPT {
   
             //------------------------------------------------------//
             //TODO: implement Newton method
-
+            SMat I(n, n);
+            I.setIdentity();
             for (; iter < _max_iters; ++iter) {
                 // calculate gradient
                 _problem->eval_gradient(x,g);
@@ -59,23 +60,17 @@ namespace AOPT {
 
                 solver.compute(H);
 
-                //delta_x =  -solver.matrixL().transpose().solve(solver.solve(g));
-                delta_x = -1.0* solver.solve(Mat::Identity(H.rows(),H.cols()))*g;
+                delta_x = -1.0* (Vec)(solver.solve(I)*g);
 
                 // Newton decrement
                 double lambda = -g.transpose().dot(delta_x);
 
                 if(lambda*0.5 <= e2){
-                    std::cout << iter;
                     break;
                 }
                 double t = LineSearch::backtracking_line_search(_problem,x,g,delta_x,1);
-                //std::cout << H << "\n";
-                //std::cout << "... \n";
-                //std::cout << delta_x << "\n";
+
                 x = x+ t * delta_x;
-
-
             }
 
 
@@ -138,7 +133,37 @@ namespace AOPT {
             //      repeat until factorization succeeds (make sure to update delta!)
            
             //------------------------------------------------------//
+            double delta = 0;
 
+            for (; iter < _max_iters; ++iter) {
+                // calculate gradient
+                _problem->eval_gradient(x,g);
+
+                //calculate hessian
+                _problem->eval_hessian(x,H);
+
+                delta = 10e-3*H.diagonal().sum()/n;
+
+                solver.compute(H);
+
+                delta_x = -1.0* (Vec)(solver.solve(I)*g);
+                while (solver.info()!=Eigen::Success){
+                    H = H + delta*I;
+                    solver.compute(H);
+                    delta_x = -1.0* (Vec)(solver.solve(I)*g);
+                    delta *= _gamma;
+                }
+
+                // Newton decrement
+                double lambda = -g.transpose().dot(delta_x);
+
+                if(lambda*0.5 <= e2){
+                    break;
+                }
+                double t = LineSearch::backtracking_line_search(_problem,x,g,delta_x,1);
+
+                x = x+ t * delta_x;
+            }
 
             return x;
         }
