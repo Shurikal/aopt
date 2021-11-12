@@ -135,7 +135,7 @@ namespace AOPT {
 
             for (int i = _k-1; i <=_k-m_ ; ++i) {
                 alpha_[i] = 0;
-                q = q-alpha_[i]*_;
+                q = q;//-alpha_[i];
 
             }
 
