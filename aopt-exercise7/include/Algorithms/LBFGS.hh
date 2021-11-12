@@ -130,8 +130,7 @@ namespace AOPT {
         void two_loop_recursion(const Vec& _g, const Vec& _sk, const Vec& _yk, const int _k) {
             //------------------------------------------------------//
             //TODO: implement the two-loop recursion as described in the lecture slides
-
-			Vec q = _g;
+            Vec q = _g;
 
             for (int i = m_-1; i >= 0; i--) {
                 alpha_[i] = rho_[i] * _sk.transpose()*q;
@@ -144,6 +143,7 @@ namespace AOPT {
                 r_ = r_ +_sk * (alpha_[i]-beta);
             }
             
+            
             //------------------------------------------------------//
         }
 
@@ -155,7 +155,6 @@ namespace AOPT {
                 rho_[i-1] = rho_[i];
             }
             rho_[m_-1] = 1/(_yk.transpose()*_sk);
-            
             //------------------------------------------------------//
         }
 
