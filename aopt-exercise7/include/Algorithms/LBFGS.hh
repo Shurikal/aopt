@@ -130,7 +130,18 @@ namespace AOPT {
         void two_loop_recursion(const Vec& _g, const Vec& _sk, const Vec& _yk, const int _k) {
             //------------------------------------------------------//
             //TODO: implement the two-loop recursion as described in the lecture slides
-            
+
+            Vec q = _g;
+
+            for (int i = _k-1; i <=_k-m_ ; ++i) {
+                alpha_[i] = 0;
+                q = q-alpha_[i]*_;
+
+            }
+
+            for (int i = _k-m_; i <=_k-1 ; ++i) {
+                
+            }
             
             //------------------------------------------------------//
         }
@@ -139,6 +150,7 @@ namespace AOPT {
             //------------------------------------------------------//
             //TODO: update the si and yi stored in the mat_s_ and mat_y_ respectively
             //update rho_i stored in rho_[i]
+            
             
             //------------------------------------------------------//
         }
