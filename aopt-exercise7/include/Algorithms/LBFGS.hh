@@ -82,7 +82,7 @@ namespace AOPT {
                 //compute the step size
                 double t = LineSearch::backtracking_line_search(_problem, x, g, -r_, 1.);
 //                double t = LineSearch::wolfe_line_search(_problem, x, g, -r_, 1.);
-
+                std::cout<<t<<std::endl;
                 if(t < 1e-16) {
                     std::cout<<"The step length is too small!"<<std::endl;
                     return x;
@@ -131,16 +131,25 @@ namespace AOPT {
             //------------------------------------------------------//
             //TODO: implement the two-loop recursion as described in the lecture slides
             Vec q = _g;
+            for(int i = 1; i< m_-1; i++){
+                mat_s_.col(i-1) = mat_s_.col(i);
+            }
+            mat_s_.col(m_-1) = _sk;
+
+            for(int i = 1; i< m_-1; i++){
+                mat_y_.col(i-1) = mat_y_.col(i);
+            }
+            mat_y_.col(m_-1) = _yk;
 
             for (int i = m_-1; i >= 0; i--) {
-                alpha_[i] = rho_[i] * _sk.transpose()*q;
-                q = q - alpha_[i]*_yk;//-alpha_[i];
+                alpha_[i] = rho_[i] * mat_s_.col(i).transpose()*q;
+                q = q - alpha_[i]*mat_y_.col(i);//-alpha_[i];
 
             }
             r_ = q;
             for (int i = 0; i < m_ ; i++) {
-                double beta = rho_[i]*_yk.transpose()*r_;
-                r_ = r_ +_sk * (alpha_[i]-beta);
+                double beta = rho_[i]*mat_y_.col(i).transpose()*r_;
+                r_ = r_ +mat_s_.col(i) * (alpha_[i]-beta);
             }
             
             
