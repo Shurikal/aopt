@@ -80,7 +80,6 @@ namespace AOPT {
              * Hint: implement eval_r to set r, containing all rj, and then use it to compute the energy */
 
 
-
             //------------------------------------------------------//
 
 
