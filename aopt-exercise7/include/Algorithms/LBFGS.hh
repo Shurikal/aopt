@@ -131,16 +131,6 @@ namespace AOPT {
             //------------------------------------------------------//
             //TODO: implement the two-loop recursion as described in the lecture slides
             Vec q = _g;
-            for(int i = 1; i< m_-1; i++){
-                mat_s_.col(i-1) = mat_s_.col(i);
-            }
-            mat_s_.col(m_-1) = _sk;
-
-            for(int i = 1; i< m_-1; i++){
-                mat_y_.col(i-1) = mat_y_.col(i);
-            }
-            mat_y_.col(m_-1) = _yk;
-
             for (int i = m_-1; i >= 0; i--) {
                 alpha_[i] = rho_[i] * mat_s_.col(i).transpose()*q;
                 q = q - alpha_[i]*mat_y_.col(i);//-alpha_[i];
@@ -160,6 +150,18 @@ namespace AOPT {
             //------------------------------------------------------//
             //TODO: update the si and yi stored in the mat_s_ and mat_y_ respectively
             //update rho_i stored in rho_[i]
+
+            for(int i = 1; i< m_-1; i++){
+                mat_s_.col(i-1) = mat_s_.col(i);
+            }
+            mat_s_.col(m_-1) = _sk;
+
+            for(int i = 1; i< m_-1; i++){
+                mat_y_.col(i-1) = mat_y_.col(i);
+            }
+            mat_y_.col(m_-1) = _yk;
+
+
             for(int i = 1; i< m_-1; i++){
                 rho_[i-1] = rho_[i];
             }

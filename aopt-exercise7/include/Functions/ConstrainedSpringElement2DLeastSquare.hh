@@ -26,6 +26,8 @@ namespace AOPT {
             //------------------------------------------------------//
             //Todo: implement the function rj(x) = sqrt(k) * (x-p)
 
+            return sqrt(_coeffs[0])*(_x[0]-_coeffs[1]);
+
             //------------------------------------------------------//
         }
 
@@ -38,7 +40,7 @@ namespace AOPT {
         inline virtual void eval_gradient(const Vec &_x, const Vec &_coeffs, Vec &_g) final {
             //------------------------------------------------------//
             //Todo: implement the gradient and store in _g
-
+            _g[0] = sqrt(_coeffs[0]);
             //------------------------------------------------------//
         }
 

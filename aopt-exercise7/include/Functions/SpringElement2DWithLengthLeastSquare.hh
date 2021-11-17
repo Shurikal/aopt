@@ -35,7 +35,11 @@ namespace AOPT {
         inline virtual double eval_f(const Vec &_x, const Vec &_coeffs) override {
             //------------------------------------------------------//
             //Todo: implement the function rj(x) = sqrt(k) * (||xa-xb||^2 - l^2)
-            
+
+            Vec x(2),xb(2);
+            x << _x[0]-_x[2],_x[1]-_x[3];
+
+            return sqrt(_coeffs[0])*(x.squaredNorm()-_coeffs[1]*_coeffs[1]);
             //------------------------------------------------------//
         }
 
