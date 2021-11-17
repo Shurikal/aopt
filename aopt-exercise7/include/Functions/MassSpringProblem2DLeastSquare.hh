@@ -3,6 +3,8 @@
 #include <FunctionBase/FunctionBaseSparse.hh>
 #include <FunctionBase/ParametricFunctionBase.hh>
 #include <Functions/ConstrainedSpringElement2DLeastSquare.hh>
+#include "SpringElement2DLeastSquare.hh"
+#include "SpringElement2DWithLengthLeastSquare.hh"
 
 //== NAMESPACES ===============================================================
 
@@ -170,7 +172,39 @@ namespace AOPT {
              *       else if spring_type_ == WITH_LENGTH, it is SpringElement2DWithLengthLeastSquare
              *       and every spring element has one rj(x), where x is a 4D vector */
 
-            
+            Vec coeff(2);
+
+            if (spring_type_ == WITHOUT_LENGTH){
+                AOPT::SpringElement2DLeastSquare spring;
+                for(size_t i=0; i<springs_.size(); ++i) {
+                    coeff[0] = ks_[i];
+                    coeff[1] = ls_[i];
+
+                    Vec x1(2);
+                    Vec x2(2);
+
+                    x1 <<  _x[2*springs_[i].first], _x[2*springs_[i].second];
+                    x2 << _x[2*springs_[i].first+1],_x[2*springs_[i].second+1];
+
+                    _r[2*i] = spring.eval_f(x1,coeff);
+                    _r[2*i+1]= spring.eval_f(x2,coeff);
+                }
+
+            } else if (spring_type_ == WITH_LENGTH){
+                AOPT::SpringElement2DWithLengthLeastSquare spring;
+                for(size_t i=0; i<springs_.size(); ++i) {
+                    coeff[0] = ks_[i];
+                    coeff[1] = ls_[i];
+
+                    xe_[0] = _x[2*springs_[i].first];
+                    xe_[1] = _x[2*springs_[i].first+1];
+
+                    xe_[2] = _x[2*springs_[i].second];
+                    xe_[3] = _x[2*springs_[i].second+1];
+
+                    _r[i] = spring.eval_f(xe_,coeff);
+                }
+            }
             
             //------------------------------------------------------//
 
@@ -210,7 +244,13 @@ namespace AOPT {
              *      spring_type_ == WITH_LENGTH --> SpringElement2DWithLengthLeastSquare
              *
              * Second hint: use triplets to set up the sparse matrix */
+            if(spring_type_ == WITHOUT_LENGTH){
 
+
+            } else if(spring_type_ == WITH_LENGTH){
+
+
+            }
 
             
             //------------------------------------------------------//
