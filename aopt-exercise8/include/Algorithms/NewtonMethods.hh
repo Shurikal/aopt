@@ -262,6 +262,37 @@ namespace AOPT {
             //      provided below
             
             //------------------------------------------------------//
+            rhs.setZero();
+            dxl.setZero();
+            dx.setZero();
+
+            for(;iter<_max_iters;iter++){
+                _problem->eval_hessian(x,H);
+                _problem->eval_gradient(x,g);
+
+                for(int i = 0; i <n;i++){
+                    rhs[i] = -g[i];
+                }
+
+                setup_KKT_matrix(H,_A,K);
+
+                solver.compute(K);
+
+                dxl = solver.solve(rhs);
+
+                for(int i = 0; i <n;i++){
+                    dx[i] = dxl[i];
+                }
+
+                double lambda2 = g.transpose() * (-dx);
+
+                if (lambda2 <= eps2) {
+                    break;
+                }
+
+                double t = LineSearch::backtracking_line_search(_problem, x, g, dx, 1.);
+                x += t*dx;
+            }
 
 
             return x;
@@ -275,8 +306,17 @@ namespace AOPT {
 
             //------------------------------------------------------//
             //TODO: project x to the hyperplane Ax = b
-            
-            
+            //A(x0 + δx) = b
+
+            Eigen::BiCGSTAB<SMat> solver;
+
+            Vec b1 = _b-_A*_x;
+
+            solver.compute(_A);
+
+            Vec dx =  solver.solve(b1);
+
+            _x = _x + dx;
             //------------------------------------------------------//
 
             // check result
