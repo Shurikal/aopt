@@ -1,0 +1,3 @@
+We had some problems implementing the code.
+Somehow, we end up with NaN's in our solution...
+We couldn't find the problem.
