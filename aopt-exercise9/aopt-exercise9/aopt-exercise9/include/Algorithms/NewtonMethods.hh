@@ -355,11 +355,56 @@ namespace AOPT {
             //count number of iterations
             
             //------------------------------------------------------//
+            double fp = std::numeric_limits<double>::max();
+
+            while (iter < _max_iters) {
+                // get gradient
+                _problem->eval_gradient(x, g);
+
+                // get hessian
+                _problem->eval_hessian(x, H);
+
+                setup_KKT_matrix(H, _A, K);
+
+                rhs.setZero(n + p);
+                rhs.head(n) = -g;
+                vector.tail(p) = _A*x-_b;
+
+                // solve for constrained Newton step
+                solver.compute(K);
+                dxl = solver.solve(rhs);
+
+                // extract primal variables
+                dx = dxl.head(n);
+                dv = dxl.tail(p);
+
+                // compute Newton decrement
+                double lambda2 = -g.transpose() * dx;
+
+                // print status
+                double f = _problem->eval_f(x);
+                std::cerr << "iter: " << iter <<
+                          "   obj = " << f <<
+                          "   lambda^2 = " << lambda2 << std::endl;
+
+                // check stopping criterion
+                if (lambda2 <= eps2 || f >= fp)
+                    break;
+
+                // step size
+                double t = LineSearch::backtracking_line_search(_problem, x, g, dx, 1.);
+
+                // update
+                x += t * dx;
+                fp = f;
+
+                ++iter;
+            }
+            //------------------------------------------------------//
 
 
             return x;
         }
-
 
         static Vec solve_equality_constrained_hybrid(FunctionBaseSparse *_problem, const Vec& _initial_x, const SMat &_A, const Vec &_b,
                                                                     const double _eps = 1e-4, const double _eps_constraints = 1e-4, const int _max_iters = 1000) {
