@@ -46,7 +46,7 @@ namespace AOPT {
 
 
             Eigen::SimplicialLLT<SMat> solver;
-  
+
             //------------------------------------------------------//
             //TODO: implement Newton method
             //fp is the function value of the previous iteration
@@ -157,7 +157,7 @@ namespace AOPT {
 
                 int cnt = 0;
                 double delta = 0.;
-                
+
                 std::cout<<" H = "<<H<<std::endl;
 
 
@@ -319,6 +319,8 @@ namespace AOPT {
             // get number of constraints
             int p = _A.rows();
 
+            double eps2 = 2*_eps*_eps;
+
             // get starting point
             Vec x = _initial_x;
 
@@ -353,16 +355,63 @@ namespace AOPT {
             //------------------------------------------------------//
             //TODO: implement the Newton with equality constraints
             //count number of iterations
-            
+
+            //------------------------------------------------------//
+            double fp = std::numeric_limits<double>::max();
+            double rhs_norm = 1;
+            int iter(0);
+            while ((_A*x-_b).norm()>eps2 &&  rhs_norm<_eps) {
+                // get gradient
+                _problem->eval_gradient(x, g);
+
+                // get hessian
+                _problem->eval_hessian(x, H);
+
+                setup_KKT_matrix(H, _A, K);
+
+                rhs.setZero(n + p);
+                rhs.head(n) = g+_A.transpose()*nu;
+                rhs.tail(p) = _A*x-_b;
+                rhs_norm = rhs.norm();
+
+                // solve for constrained Newton step
+                solver.compute(K);
+                dxl = solver.solve(-rhs);
+
+                // extract primal variables
+                dx = dxl.head(n);
+                dnu = dxl.tail(p);
+
+                // compute Newton decrement
+                double lambda2 = -g.transpose() * dx;
+
+                // print status
+                double f = _problem->eval_f(x);
+                std::cerr << "iter: " << iter <<
+                          "   obj = " << f <<
+                          "   lambda^2 = " << lambda2 << std::endl;
+
+                // check stopping criterion
+                if (lambda2 <= eps2 || f >= fp)
+                    break;
+
+                // step size
+                double t = LineSearch::backtracking_line_search_newton_with_infeasible_start(_problem,_A,_b,x,nu,dx,dnu, rhs_norm, 0.01);
+
+                // update
+                x += t * dx;
+                nu += t * dnu;
+
+                ++iter;
+            }
             //------------------------------------------------------//
 
 
             return x;
         }
 
-
         static Vec solve_equality_constrained_hybrid(FunctionBaseSparse *_problem, const Vec& _initial_x, const SMat &_A, const Vec &_b,
-                                                                    const double _eps = 1e-4, const double _eps_constraints = 1e-4, const int _max_iters = 1000) {
+                                                     const double _eps = 1e-4, const double _eps_constraints = 1e-4, const int _max_iters = 1000) {
             std::cerr << "******** Equality Constrained Newton with hybrid method********" << std::endl;
             // epsilon for newton decrement
             double eps2 = 2.0 *_eps * _eps;
@@ -408,14 +457,14 @@ namespace AOPT {
             //------------------------------------------------------//
             //TODO: implement the Newton with equality constraints
             //count number of iterations
-            
+
             //------------------------------------------------------//
 
 
             return x;
         }
-        
-        
+
+
         static void project_on_affine(Vec &_x, const SMat &_A, const Vec &_b) {
             int n = _x.rows();
             int p = _A.rows();
@@ -445,7 +494,7 @@ namespace AOPT {
         }
 
     private:
-        
+
 
         static void setup_KKT_matrix(const SMat &_H, const SMat &_A, SMat& _K) {
             const int n  = static_cast<int>(_H.cols());
