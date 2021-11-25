@@ -1,0 +1,1617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="AOPT_EXERCISES"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\_deps\;CMake Files\cmake-build-debug\_deps\googletest-src\;CMake Files\cmake-build-debug\_deps\googletest-src\googlemock\;CMake Files\cmake-build-debug\_deps\googletest-src\googlemock\cmake\;CMake Files\cmake-build-debug\_deps\googletest-src\googletest\;CMake Files\cmake-build-debug\_deps\googletest-src\googletest\cmake\;CMake Files\EigenTutorial\;CMake Files\GridSearch\;CMake Files\CsvExporter\;CMake Files\ConvexityTests\;CMake Files\MassSpringSystem\;CMake Files\MassSpringProblemEvaluation\;CMake Files\OptimalityChecker\;CMake Files\GradientDescent\;CMake Files\NewtonMethods\;CMake Files\LBFGS\;CMake Files\GaussNewton\;CMake Files\EqualityConstrainedNewton\;CMake Files\EqualityConstrainedNewtonInfeasibleStart\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/lib/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googlemock/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googlemock"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/lib/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googlemock/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googlemock"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/lib/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googlemock/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googlemock"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/lib/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googlemock/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googlemock"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/lib/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/lib/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/lib/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/lib/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EigenTutorial-test">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/EigenTutorial-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EigenTutorial/Makefile&quot;  VERBOSE=1 EigenTutorial-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EigenTutorial/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EigenTutorial/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EigenTutorial/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EigenTutorial-test/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/EigenTutorial-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EigenTutorial/Makefile&quot;  VERBOSE=1 EigenTutorial-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EigenTutorial/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EigenTutorial/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EigenTutorial/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GridSearch">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/GridSearch" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GridSearch/Makefile&quot;  VERBOSE=1 GridSearch"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GridSearch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GridSearch/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GridSearch/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GridSearch/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/GridSearch" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GridSearch/Makefile&quot;  VERBOSE=1 GridSearch/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GridSearch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GridSearch/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GridSearch/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GridSearch-test">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/GridSearch-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GridSearch/Makefile&quot;  VERBOSE=1 GridSearch-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GridSearch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GridSearch/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GridSearch/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GridSearch-test/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/GridSearch-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GridSearch/Makefile&quot;  VERBOSE=1 GridSearch-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GridSearch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GridSearch/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GridSearch/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CsvExporter">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/CsvExporter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/CsvExporter/Makefile&quot;  VERBOSE=1 CsvExporter"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/CsvExporter/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/CsvExporter/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/CsvExporter/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CsvExporter/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/CsvExporter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/CsvExporter/Makefile&quot;  VERBOSE=1 CsvExporter/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/CsvExporter/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/CsvExporter/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/CsvExporter/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ConvexityTests">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/ConvexityTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/ConvexityTests/Makefile&quot;  VERBOSE=1 ConvexityTests"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/ConvexityTests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/ConvexityTests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/ConvexityTests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ConvexityTests/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/ConvexityTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/ConvexityTests/Makefile&quot;  VERBOSE=1 ConvexityTests/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/ConvexityTests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/ConvexityTests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/ConvexityTests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ConvexityTests-test">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/ConvexityTests-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/ConvexityTests/Makefile&quot;  VERBOSE=1 ConvexityTests-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/ConvexityTests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/ConvexityTests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/ConvexityTests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ConvexityTests-test/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/ConvexityTests-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/ConvexityTests/Makefile&quot;  VERBOSE=1 ConvexityTests-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/ConvexityTests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/ConvexityTests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/ConvexityTests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MassSpringProblemEvaluation">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/MassSpringProblemEvaluation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/MassSpringProblemEvaluation/Makefile&quot;  VERBOSE=1 MassSpringProblemEvaluation"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/MassSpringProblemEvaluation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/MassSpringProblemEvaluation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/MassSpringProblemEvaluation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MassSpringProblemEvaluation/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/MassSpringProblemEvaluation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/MassSpringProblemEvaluation/Makefile&quot;  VERBOSE=1 MassSpringProblemEvaluation/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/MassSpringProblemEvaluation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/MassSpringProblemEvaluation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/MassSpringProblemEvaluation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MassSpringProblemEvaluation-test">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/MassSpringProblemEvaluation-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/MassSpringProblemEvaluation/Makefile&quot;  VERBOSE=1 MassSpringProblemEvaluation-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/MassSpringProblemEvaluation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/MassSpringProblemEvaluation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/MassSpringProblemEvaluation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MassSpringProblemEvaluation-test/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/MassSpringProblemEvaluation-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/MassSpringProblemEvaluation/Makefile&quot;  VERBOSE=1 MassSpringProblemEvaluation-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/MassSpringProblemEvaluation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/MassSpringProblemEvaluation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/MassSpringProblemEvaluation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OptimalityChecker">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/OptimalityChecker" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/OptimalityChecker/Makefile&quot;  VERBOSE=1 OptimalityChecker"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/OptimalityChecker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/OptimalityChecker/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/OptimalityChecker/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OptimalityChecker/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/OptimalityChecker" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/OptimalityChecker/Makefile&quot;  VERBOSE=1 OptimalityChecker/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/OptimalityChecker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/OptimalityChecker/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/OptimalityChecker/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OptimalityChecker-test">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/OptimalityChecker-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/OptimalityChecker/Makefile&quot;  VERBOSE=1 OptimalityChecker-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/OptimalityChecker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/OptimalityChecker/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/OptimalityChecker/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OptimalityChecker-test/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/OptimalityChecker-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/OptimalityChecker/Makefile&quot;  VERBOSE=1 OptimalityChecker-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/OptimalityChecker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/OptimalityChecker/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/OptimalityChecker/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GradientDescent">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/GradientDescent" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GradientDescent/Makefile&quot;  VERBOSE=1 GradientDescent"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GradientDescent/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GradientDescent/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GradientDescent/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GradientDescent/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/GradientDescent" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GradientDescent/Makefile&quot;  VERBOSE=1 GradientDescent/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GradientDescent/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GradientDescent/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GradientDescent/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GradientDescent-test">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/GradientDescent-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GradientDescent/Makefile&quot;  VERBOSE=1 GradientDescent-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GradientDescent/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GradientDescent/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GradientDescent/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GradientDescent-test/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/GradientDescent-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GradientDescent/Makefile&quot;  VERBOSE=1 GradientDescent-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GradientDescent/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GradientDescent/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GradientDescent/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="NewtonMethods">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/NewtonMethods" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/NewtonMethods/Makefile&quot;  VERBOSE=1 NewtonMethods"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/NewtonMethods/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/NewtonMethods/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/NewtonMethods/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="NewtonMethods/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/NewtonMethods" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/NewtonMethods/Makefile&quot;  VERBOSE=1 NewtonMethods/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/NewtonMethods/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/NewtonMethods/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/NewtonMethods/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="NewtonMethods-test">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/NewtonMethods-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/NewtonMethods/Makefile&quot;  VERBOSE=1 NewtonMethods-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/NewtonMethods/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/NewtonMethods/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/NewtonMethods/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="NewtonMethods-test/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/NewtonMethods-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/NewtonMethods/Makefile&quot;  VERBOSE=1 NewtonMethods-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/NewtonMethods/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/NewtonMethods/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/NewtonMethods/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LBFGS">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/LBFGS" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/LBFGS/Makefile&quot;  VERBOSE=1 LBFGS"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/LBFGS/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/LBFGS/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/LBFGS/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LBFGS/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/LBFGS" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/LBFGS/Makefile&quot;  VERBOSE=1 LBFGS/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/LBFGS/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/LBFGS/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/LBFGS/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LBFGS-test">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/LBFGS-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/LBFGS/Makefile&quot;  VERBOSE=1 LBFGS-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/LBFGS/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/LBFGS/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/LBFGS/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LBFGS-test/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/LBFGS-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/LBFGS/Makefile&quot;  VERBOSE=1 LBFGS-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/LBFGS/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/LBFGS/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/LBFGS/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GaussNewton">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/GaussNewton" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GaussNewton/Makefile&quot;  VERBOSE=1 GaussNewton"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GaussNewton/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GaussNewton/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GaussNewton/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GaussNewton/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/GaussNewton" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GaussNewton/Makefile&quot;  VERBOSE=1 GaussNewton/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GaussNewton/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GaussNewton/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GaussNewton/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GaussNewton-test">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/GaussNewton-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GaussNewton/Makefile&quot;  VERBOSE=1 GaussNewton-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GaussNewton/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GaussNewton/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GaussNewton/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GaussNewton-test/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/GaussNewton-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GaussNewton/Makefile&quot;  VERBOSE=1 GaussNewton-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GaussNewton/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GaussNewton/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/GaussNewton/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EqualityConstrainedNewton">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/EqualityConstrainedNewton" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewton/Makefile&quot;  VERBOSE=1 EqualityConstrainedNewton"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewton/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewton/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewton/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EqualityConstrainedNewton/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/EqualityConstrainedNewton" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewton/Makefile&quot;  VERBOSE=1 EqualityConstrainedNewton/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewton/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewton/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewton/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EqualityConstrainedNewton-test">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/EqualityConstrainedNewton-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewton/Makefile&quot;  VERBOSE=1 EqualityConstrainedNewton-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewton/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewton/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewton/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EqualityConstrainedNewton-test/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/EqualityConstrainedNewton-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewton/Makefile&quot;  VERBOSE=1 EqualityConstrainedNewton-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewton/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewton/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewton/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EqualityConstrainedNewtonInfeasibleStart">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/EqualityConstrainedNewtonInfeasibleStart" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewtonInfeasibleStart/Makefile&quot;  VERBOSE=1 EqualityConstrainedNewtonInfeasibleStart"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewtonInfeasibleStart/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewtonInfeasibleStart/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewtonInfeasibleStart/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EqualityConstrainedNewtonInfeasibleStart/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/EqualityConstrainedNewtonInfeasibleStart" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewtonInfeasibleStart/Makefile&quot;  VERBOSE=1 EqualityConstrainedNewtonInfeasibleStart/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewtonInfeasibleStart/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewtonInfeasibleStart/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewtonInfeasibleStart/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EqualityConstrainedNewtonInfeasibleStart-test">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/EqualityConstrainedNewtonInfeasibleStart-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewtonInfeasibleStart/Makefile&quot;  VERBOSE=1 EqualityConstrainedNewtonInfeasibleStart-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewtonInfeasibleStart/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewtonInfeasibleStart/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewtonInfeasibleStart/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EqualityConstrainedNewtonInfeasibleStart-test/fast">
+				<Option output="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin/EqualityConstrainedNewtonInfeasibleStart-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/Build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINCLUDE_TEMPLATES"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/external/eigen"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/include"/>
+					<Add directory="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewtonInfeasibleStart/Makefile&quot;  VERBOSE=1 EqualityConstrainedNewtonInfeasibleStart-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewtonInfeasibleStart/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewtonInfeasibleStart/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/EqualityConstrainedNewtonInfeasibleStart/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/ConvexityTests/main.cc">
+			<Option target="ConvexityTests"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/ConvexityTests/unit_tests.cc">
+			<Option target="ConvexityTests-test"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/CsvExporter/main.cc">
+			<Option target="CsvExporter"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/EigenTutorial/unit_tests.cc">
+			<Option target="EigenTutorial-test"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/EqualityConstrainedNewton/main.cc">
+			<Option target="EqualityConstrainedNewton"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/EqualityConstrainedNewton/unit_tests.cc">
+			<Option target="EqualityConstrainedNewton-test"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/EqualityConstrainedNewtonInfeasibleStart/main.cc">
+			<Option target="EqualityConstrainedNewtonInfeasibleStart"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/EqualityConstrainedNewtonInfeasibleStart/unit_tests.cc">
+			<Option target="EqualityConstrainedNewtonInfeasibleStart-test"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/GaussNewton/main.cc">
+			<Option target="GaussNewton"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/GaussNewton/unit_tests.cc">
+			<Option target="GaussNewton-test"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/GradientDescent/main.cc">
+			<Option target="GradientDescent"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/GradientDescent/unit_tests.cc">
+			<Option target="GradientDescent-test"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/GridSearch/main.cc">
+			<Option target="GridSearch"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/GridSearch/unit_tests.cc">
+			<Option target="GridSearch-test"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/LBFGS/main.cc">
+			<Option target="LBFGS"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/LBFGS/unit_tests.cc">
+			<Option target="LBFGS-test"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringProblemEvaluation/main.cc">
+			<Option target="MassSpringProblemEvaluation"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringProblemEvaluation/unit_tests.cc">
+			<Option target="MassSpringProblemEvaluation-test"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/NewtonMethods/main.cc">
+			<Option target="NewtonMethods"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/NewtonMethods/unit_tests.cc">
+			<Option target="NewtonMethods-test"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/OptimalityChecker/main.cc">
+			<Option target="OptimalityChecker"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/OptimalityChecker/unit_tests.cc">
+			<Option target="OptimalityChecker-test"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock-all.cc">
+			<Option target="gmock"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock_main.cc">
+			<Option target="gmock_main"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\googletest-src\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\googletest-src\googlemock\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\googletest-src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\googletest-src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\googletest-src\googletest\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/cmake-build-debug/_deps/googletest-src/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/EigenTutorial/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\EigenTutorial\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/EigenTutorial/unit_tests.cc">
+			<Option virtualFolder="CMake Files\EigenTutorial\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/GridSearch/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\GridSearch\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/GridSearch/unit_tests.cc">
+			<Option virtualFolder="CMake Files\GridSearch\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/CsvExporter/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\CsvExporter\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/ConvexityTests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ConvexityTests\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/ConvexityTests/unit_tests.cc">
+			<Option virtualFolder="CMake Files\ConvexityTests\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringSystem/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\MassSpringSystem\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringProblemEvaluation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\MassSpringProblemEvaluation\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/MassSpringProblemEvaluation/unit_tests.cc">
+			<Option virtualFolder="CMake Files\MassSpringProblemEvaluation\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/OptimalityChecker/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\OptimalityChecker\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/GradientDescent/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\GradientDescent\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/GradientDescent/unit_tests.cc">
+			<Option virtualFolder="CMake Files\GradientDescent\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/NewtonMethods/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\NewtonMethods\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/NewtonMethods/unit_tests.cc">
+			<Option virtualFolder="CMake Files\NewtonMethods\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/LBFGS/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\LBFGS\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/LBFGS/unit_tests.cc">
+			<Option virtualFolder="CMake Files\LBFGS\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/GaussNewton/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\GaussNewton\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/GaussNewton/unit_tests.cc">
+			<Option virtualFolder="CMake Files\GaussNewton\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/EqualityConstrainedNewton/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\EqualityConstrainedNewton\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/EqualityConstrainedNewton/unit_tests.cc">
+			<Option virtualFolder="CMake Files\EqualityConstrainedNewton\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/EqualityConstrainedNewtonInfeasibleStart/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\EqualityConstrainedNewtonInfeasibleStart\"/>
+		</Unit>
+		<Unit filename="/home/raphael/Documents/GitHub/aopt/aopt-exercise9/aopt-exercise9/aopt-exercise9/EqualityConstrainedNewtonInfeasibleStart/unit_tests.cc">
+			<Option virtualFolder="CMake Files\EqualityConstrainedNewtonInfeasibleStart\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

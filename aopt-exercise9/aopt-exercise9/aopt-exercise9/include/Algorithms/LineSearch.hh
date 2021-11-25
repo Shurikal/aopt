@@ -92,9 +92,20 @@ namespace AOPT {
                                                                             const double _beta = 0.9) {
             //------------------------------------------------------//
             double t = _t0;
+            int i = 0;
+            while (i < 1000){
+                Vec g;
+                _problem -> eval_gradient(_x+t*_dx,g);
+                Vec residual(1,2);
+                residual << g + _A*(_nu+t*_dnu),_A*(x+t*_dx)-b;
+                if (residual.norm()<=(1-_alpha)*_initial_res){
+                    return t;
+                }
+                i++;
+}
+            }
 
-            //TODO: implement the algorithm
-            
+
 
             //------------------------------------------------------//
 
