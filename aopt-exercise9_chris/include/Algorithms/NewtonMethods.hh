@@ -448,7 +448,45 @@ namespace AOPT {
             //count number of iterations
 
             //------------------------------------------------------//
+            int iter(0);
+            while (true) {
+                iter++;
+                // get gradient
+                _problem->eval_gradient(x, g);
 
+
+                // get hessian
+                _problem->eval_hessian(x, H);
+
+                setup_KKT_matrix(H, _A, K);
+
+                rhs.setZero();
+                rhs.head(n) = g+_A.transpose()*nu;
+                rhs.tail(p) = _A*x-_b;
+                res = rhs.norm();
+
+                // solve for constrained Newton step
+                solver.compute(K);
+                dxl = solver.solve(-rhs);
+
+                // extract primal variables
+                dx = dxl.head(n);
+                dnu = dxl.tail(p);
+
+                // step size
+                double t = LineSearch::backtracking_line_search_newton_with_infeasible_start(_problem,_A,_b,x,nu,dx,dnu, res, 0.01);
+
+                // update
+                x += t * dx;
+                nu += t * dnu;
+
+                if((_A*x-_b).norm()<eps2){
+                    break;
+                }
+            }
+
+
+            x = solve_equality_constrained(_problem,x,_A,_b,_eps,1000);
 
             return x;
         }
