@@ -369,7 +369,7 @@ namespace AOPT {
 
                 setup_KKT_matrix(H, _A, K);
 
-                rhs.setZero(n + p);
+                rhs.setZero();
                 rhs.head(n) = g+_A.transpose()*nu;
                 rhs.tail(p) = _A*x-_b;
                 rhs_norm = rhs.norm();

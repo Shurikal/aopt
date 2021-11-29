@@ -101,6 +101,7 @@ namespace AOPT {
                 if (residual.norm()<=(1-_alpha)*_initial_res){
                     return t;
                 }
+                t = _beta*t;
                 i++;
             }
 
