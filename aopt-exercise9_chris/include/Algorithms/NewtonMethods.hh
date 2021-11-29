@@ -357,8 +357,9 @@ namespace AOPT {
             //count number of iterations
 
             //------------------------------------------------------//
-
+            int iter(0);
             while (true) {
+                iter++;
                 // get gradient
                 _problem->eval_gradient(x, g);
 
@@ -381,10 +382,6 @@ namespace AOPT {
                 dx = dxl.head(n);
                 dnu = dxl.tail(p);
 
-
-                double f = _problem->eval_f(x);
-                std::cerr << "   obj = " << f <<std::endl;
-
                 // step size
                 double t = LineSearch::backtracking_line_search_newton_with_infeasible_start(_problem,_A,_b,x,nu,dx,dnu, res, 0.01);
 
@@ -398,7 +395,7 @@ namespace AOPT {
             }
             //------------------------------------------------------//
 
-
+            std::cout << "Iterations: " << iter << std::endl;
             return x;
         }
 
