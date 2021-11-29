@@ -93,13 +93,20 @@ namespace AOPT {
             //------------------------------------------------------//
             double t = _t0;
             int i = 0;
-            while (i < 1000){
-                Vec g;
+            int n = _problem->n_unknowns();
+
+            // get number of constraints
+            int p = _A.rows();
+            Vec residual(n+p);
+            Vec g;
+            while (true){
+
                 _problem -> eval_gradient(_x+t*_dx,g);
-                Vec residual(1,2);
-                residual << g + _A*(_nu+t*_dnu),_A*(_x+t*_dx)-_b;
-                if (residual.norm()<=(1-_alpha)*_initial_res){
-                    return t;
+                residual.setZero();
+                residual.head(n) = g+_A.transpose()*(_nu+t*_dnu);
+                residual.tail(p) = _A*(_x+t*_dx)-_b;
+                if (residual.norm()<=(1-_alpha*t)*_initial_res){
+                    break;
                 }
                 t = _beta*t;
                 i++;
@@ -109,7 +116,6 @@ namespace AOPT {
 
 
         //------------------------------------------------------//
-
         return t;
     }
 

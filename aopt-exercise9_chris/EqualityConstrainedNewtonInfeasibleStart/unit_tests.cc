@@ -111,7 +111,7 @@ TEST(MassSpringSystemWithInfeasibleStart, CheckMinimumWithSpringWithLength){
     AOPT::NewtonMethods::Vec x = AOPT::NewtonMethods::solve_equality_constrained_with_infeasible_start(opt_st.get(), start_pts, A, b, 1e-6, 1e-8, max_iter);
 
     double final_energy = mss.get_problem()->eval_f(x);
-    double expected_final_energy(17389.532762494073);
+        double expected_final_energy(17389.532762494073);
 
     ASSERT_NEAR(final_energy, expected_final_energy, 1e-5);
 }

@@ -357,12 +357,11 @@ namespace AOPT {
             //count number of iterations
 
             //------------------------------------------------------//
-            double fp = std::numeric_limits<double>::max();
-            double rhs_norm = 1;
-            int iter(0);
-            while ((_A*x-_b).norm()>eps2 &&  rhs_norm<_eps) {
+
+            while (true) {
                 // get gradient
                 _problem->eval_gradient(x, g);
+
 
                 // get hessian
                 _problem->eval_hessian(x, H);
@@ -372,7 +371,7 @@ namespace AOPT {
                 rhs.setZero();
                 rhs.head(n) = g+_A.transpose()*nu;
                 rhs.tail(p) = _A*x-_b;
-                rhs_norm = rhs.norm();
+                res = rhs.norm();
 
                 // solve for constrained Newton step
                 solver.compute(K);
@@ -382,27 +381,20 @@ namespace AOPT {
                 dx = dxl.head(n);
                 dnu = dxl.tail(p);
 
-                // compute Newton decrement
-                double lambda2 = -g.transpose() * dx;
 
-                // print status
                 double f = _problem->eval_f(x);
-                std::cerr << "iter: " << iter <<
-                          "   obj = " << f <<
-                          "   lambda^2 = " << lambda2 << std::endl;
-
-                // check stopping criterion
-                if (lambda2 <= eps2 || f >= fp)
-                    break;
+                std::cerr << "   obj = " << f <<std::endl;
 
                 // step size
-                double t = LineSearch::backtracking_line_search_newton_with_infeasible_start(_problem,_A,_b,x,nu,dx,dnu, rhs_norm, 0.01);
+                double t = LineSearch::backtracking_line_search_newton_with_infeasible_start(_problem,_A,_b,x,nu,dx,dnu, res, 0.01);
 
                 // update
                 x += t * dx;
                 nu += t * dnu;
 
-                ++iter;
+                if((_A*x-_b).norm()<eps2 &&  res<_eps_constraints){
+                    break;
+                }
             }
             //------------------------------------------------------//
 
