@@ -7,20 +7,24 @@ Infeasible Start Newton's method
 Active Set Method using Newton’s solver
 Primal-Dual Interior Point method using Newton's solver with Hessian modification
 
+The augmented Lagrangian is the fastest solver for this problem.
+We start feasible so the infeasible solver is not necessary.
+The active Set and Interior Point method are designed for inequality constraints
+problem and converge there fast.
 
 ## A linear program with inequality constraints
 
 Active Set Method using Newton’s solver
 + Primal-Dual Interior Point method using Newton's solver with Hessian modification
 
-
+It is faster than the Active Set Method because it does not go to the boundaries of the constraints as fast as the Active Set Method. On the boundaries the step size is much smaller and it needs more iteration steps.
 
 ## A convex quadratic problem with linear inequality constraints which can be solved via a sequence of convex quadratic subproblems with small number of linear equality constraints
 
 Active Set Method using Newton’s solver
-+ Primal-Dual Interior Point method using Newton's solver with Hessian
+Primal-Dual Interior Point method using Newton's solver with Hessian
 modification
-It is faster than the Active Set Method because it does not go to the boundaries of the constraints as fast as the Active Set Method. On the boundaries the step size is much smaller and it needs more iteration steps.
+
 
 ## An unconstrained non-convex problem
 
