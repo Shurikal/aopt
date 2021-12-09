@@ -30,7 +30,7 @@ modification
 
 Gradient Descent method, will give a local minimum.
 + Newton's method, will give a local minimum.
-Newton's Method is faster than Gradient Descent because it uses also secound order derivative information. It is faster than the other problems because the others are adapted to solve different problems which are not usefull in this case and only increase computation time.
+Newton's Method is faster than Gradient Descent because it uses also second order derivative information. It is faster than the other problems because the others are adapted to solve different problems which are not useful in this case and only increase computation time.
 Augmented Lagrangian method using Newton's solver
 Infeasible Start Newton's method
 Active Set Method using Newton’s solver
